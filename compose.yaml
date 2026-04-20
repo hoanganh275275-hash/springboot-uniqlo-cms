@@ -4,8 +4,6 @@ services:
     container_name: 'mysql_uniqlo_t3h'
     environment:
       - 'MYSQL_DATABASE=uniqlo_t3h_database'
-      - 'MYSQL_PASSWORD=123456'
       - 'MYSQL_ROOT_PASSWORD=admin123'
-      - 'MYSQL_USER= myuser'
     ports:
       - '3306:3306'

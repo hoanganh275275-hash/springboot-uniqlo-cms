@@ -1,5 +1,21 @@
 spring:
   application:
-    name: uniqlo-v1
+    name: uniqlo-service-v1
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 30
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+
+  profiles:
+    active: dev
 server:
   port: 8081
