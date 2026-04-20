@@ -21,6 +21,10 @@ public class ProductSku extends AbstractAuditingEntity{
     Product product;
 
     @ManyToOne
+    @JoinColumn(name = "color_id")
+    private Color color;
+
+    @ManyToOne
     @JoinColumn(name = "size_id")
     Size size;
 
